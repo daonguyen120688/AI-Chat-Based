@@ -1,0 +1,115 @@
+﻿<MenuConfiguration>
+  <MenuItem  Permission="Per_Merchant_SchemaManagement_ViewSchema">
+    <HtmlId>admin</HtmlId>
+    <Order>40</Order>
+    <Label>[txt:sys_Admin]</Label>
+  </MenuItem>
+  <MenuItem Permission="Per_MerchCaseTask_Case,Per_MerchCaseTask_CreateCaseValueLinkAdditional,Per_MerchCaseTask_CreateCaseDatawireAdditional">
+    <HtmlId>new_case</HtmlId>
+    <Order>24</Order>
+    <Label>[txt:sys_NewCase]</Label>
+  </MenuItem>
+  <MenuItem Permission="Per_TacReport">
+    <HtmlId>reports</HtmlId>
+    <Order>50</Order>
+    <Label>[txt:sys_Reports]</Label>
+  </MenuItem>
+  <MenuItem Permission="Per_AdjMFC_ApproveMFCRequest,Per_AdjMFC_ViewHistoricalTransaction,Per_AdjMFC_ViewRequestListMFC,Per_AdjGAF_CreateGAF,Per_AJ15_CreateAJ15,Per_AdjGAF_ApproveGAFRequest,Per_AJ15_ViewRequestListAJ15,Per_AdjGAF_ViewRequestListGAF,Per_AdjGAF_ViewHistoricalTransaction">
+    <HtmlId>adjustments-menu</HtmlId>
+    <Order>100</Order>
+    <Label>[txt:sys_Adjustments]</Label>
+    <SubMenuItems>
+      <MenuItem Permission="Per_AdjGAF_ApproveGAFRequest,Per_AdjMFC_ApproveMFCRequest">
+        <HtmlId>approval-list</HtmlId>
+        <Order>100</Order>
+        <Label>[txt:sys_ApprovalList]</Label>
+      </MenuItem>
+      <MenuItem Permission="Per_AJ15_CreateAJ15">
+        <HtmlId>create-aj15-request</HtmlId>
+        <Order>200</Order>
+        <Label>[txt:sys_CreateAJ15Request]</Label>
+      </MenuItem>
+      <MenuItem Permission="Per_AdjGAF_CreateGAF,Per_AdjMFC_CreateMFC">
+        <HtmlId>create-gaf-request</HtmlId>
+        <Order>300</Order>
+        <Label>[txt:sys_CreateGAFRequest]</Label>
+      </MenuItem>
+      <MenuItem Permission="Per_AdjGAF_ViewHistoricalTransaction,Per_AdjMFC_ViewHistoricalTransaction">
+        <HtmlId>gaf-historical-transaction</HtmlId>
+        <Order>400</Order>
+        <Label>[txt:sys_HistoricalTransaction]</Label>
+      </MenuItem>
+      <MenuItem Permission="Per_AJ15_ViewRequestListAJ15,Per_AdjGAF_ViewRequestListGAF,Per_AdjMFC_ViewRequestListMFC">
+        <HtmlId>request-list</HtmlId>
+        <Order>500</Order>
+        <Label>[txt:sys_RequestList]</Label>
+      </MenuItem>
+    </SubMenuItems>
+  </MenuItem>
+  <MenuItem Permission="Per_TransactionRequests_AddBulkTLR,Per_TransactionRequests_EditBulkTLR,Per_TransactionRequests_ViewBulkTLR,Per_TransactionRequests_CancelBulkTLR,Per_TransactionRequests_AddBulkOT,Per_TransactionRequests_EditBulkOT,Per_TransactionRequests_ViewBulkOT,Per_TransactionRequests_CancelBulkOT,Merchant_TransactionRequests_BulkOT_Add_*,Merchant_TransactionRequests_BulkOT_Cancel_*,Merchant_TransactionRequests_BulkOT_Edit_*,Merchant_TransactionRequests_BulkOT_View_*">
+    <HtmlId>transaction-menu</HtmlId>
+    <Order>110</Order>
+    <Label>[txt:sys_transaction]</Label>
+    <SubMenuItems>
+      <MenuItem Permission="Per_TransactionRequests_AddBulkTLR,Per_TransactionRequests_AddBulkOT,Merchant_TransactionRequests_BulkOT_Add_*">
+        <HtmlId>create-transaction</HtmlId>
+        <Order>100</Order>
+        <Label>[txt:sys_createTransaction]</Label>
+      </MenuItem>
+      <MenuItem Permission="Per_TransactionRequests_AddBulkTLR,Per_TransactionRequests_EditBulkTLR,Per_TransactionRequests_ViewBulkTLR,Per_TransactionRequests_CancelBulkTLR,Per_TransactionRequests_AddBulkOT,Per_TransactionRequests_EditBulkOT,Per_TransactionRequests_ViewBulkOT,Per_TransactionRequests_CancelBulkOT,Merchant_TransactionRequests_BulkOT_Add_*,Merchant_TransactionRequests_BulkOT_Cancel_*,Merchant_TransactionRequests_BulkOT_Edit_*,Merchant_TransactionRequests_BulkOT_View_*">
+        <HtmlId>transaction-list</HtmlId>
+        <Order>200</Order>
+        <Label>[txt:sys_transaction_requestList]</Label>
+      </MenuItem>
+    </SubMenuItems>
+  </MenuItem>
+  <MenuItem Permission="Per_BulkCase_UploadBulkFile,Per_BulkCase_ViewList,Per_BulkCase_DownloadBulkFile,Per_ParentCase_CreateParentCase,Per_BulkCase_EditBulkFile">
+    <HtmlId>case-management-menu</HtmlId>
+    <Order>200</Order>
+    <Label>[txt:sys_CaseManagement]</Label>
+    <SubMenuItems>
+      <MenuItem Permission="Per_BulkCase_UploadBulkFile">
+        <HtmlId>bulk-file-upload</HtmlId>
+        <Order>100</Order>
+        <Label>[txt:sys_BulkFileUpload]</Label>
+      </MenuItem>
+      <MenuItem Permission="Per_BulkCase_ViewList,Per_BulkCase_UploadBulkFile,Per_BulkCase_EditBulkFile">
+        <HtmlId>bulk-file-list</HtmlId>
+        <Order>200</Order>
+        <Label>[txt:sys_BulkFileList]</Label>
+      </MenuItem>
+      <MenuItem Permission="Per_BulkCase_DownloadBulkFile">
+        <HtmlId>bulk-file-template</HtmlId>
+        <Order>300</Order>
+        <Label>[txt:sys_BulkFileTemplate]</Label>
+      </MenuItem>
+      <MenuItem Permission="Per_ParentCase_CreateParentCase">
+        <HtmlId>new-parent-case</HtmlId>
+        <Order>400</Order>
+        <Label>[txt:sys_NewParentCase]</Label>
+      </MenuItem>
+    </SubMenuItems>
+  </MenuItem>
+  <MenuItem Permission="Per_MyWork,Per_MerchCaseTask_Case,Per_MerchCaseTask_CreateCaseValueLinkAdditional,Per_MerchCaseTask_CreateCaseDatawireAdditional">
+    <HtmlId>workspace</HtmlId>
+    <Order>300</Order>
+    <Label>[txt:sys_Workspace]</Label>
+  </MenuItem>
+  <MenuItem Permission="*">
+    <HtmlId>smart-guide-menu</HtmlId>
+    <Order>400</Order>
+    <Label>[txt:sys_SmartGuide]</Label>
+	<ExternalUrl>true</ExternalUrl>
+	<OpenWith>1</OpenWith> <!-- 1: New window, 2. New tab-->
+  </MenuItem>
+  <MenuItem Permission="*">
+    <HtmlId>my-appointments</HtmlId>
+    <Order>250</Order>
+    <Label>[txt:sys_Appointments]</Label>
+  </MenuItem>
+  <MenuItem Permission="*">
+    <HtmlId>templates-or-forms</HtmlId>
+    <Order>500</Order>
+    <Label>[txt:sys_TemplatesOrForms]</Label>
+  </MenuItem>
+</MenuConfiguration>
