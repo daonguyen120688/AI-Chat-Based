@@ -1,0 +1,11 @@
+﻿@page "/c/{id:guid}"
+@rendermode @(new InteractiveWebAssemblyRenderMode(prerender: false))
+
+<PageTitle>Chat</PageTitle>
+
+<Chat ConversationId="Id"></Chat>
+
+@code {
+    [Parameter]
+    public Guid Id { get; set; }
+}
