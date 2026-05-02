@@ -22,7 +22,7 @@ public class AgentFactory : IAgentFactory
     private readonly AgentDbContext _agentDbContext;
     public string ToolContext { get; set; } = string.Empty;
 
-    private Guid DefaultAgentId = new Guid("E0541265-9A50-449B-B90A-AEBCA6A155E3");
+    private Guid DefaultAgentId = new Guid("EFF86707-68AD-43B3-A7D1-1810696AFA78");
 
     public AgentFactory(IConfiguration configuration, AgentDbContext agentDbContext)
     {
